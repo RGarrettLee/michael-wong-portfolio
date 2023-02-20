@@ -3,6 +3,7 @@ import { useCallback } from 'react';
 import ParticleOptions from '../utils/particles';
 import { loadFull } from 'tsparticles';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
 
@@ -24,7 +25,7 @@ export default function Home() {
        />
        <div className="flex flex-col justify-center text-center mt-auto">
           <div className='flex justify-center mb-4'>
-            <img className='rounded-full h-60 w-60 lg:h-32 lg:w-32 2xl:h-60 2xl:w-60 ring-2 ring-black' src='https://i.imgur.com/RsxlijS.jpg'></img>
+            <img className='rounded-full h-60 w-60 lg:h-32 lg:w-32 2xl:h-60 2xl:w-60 ring-2 ring-black' src='https://i.imgur.com/RsxlijS.jpg' alt='pfp'></img>
           </div>
           <h1 className='font-bold text-5xl 2xl:text-6xl'>Michael Wong</h1>
           <h2 className='font-thin mt-2 text-lg 2xl:text-xl'>B.E.Sc. Computer Engineering, 2024</h2>
@@ -50,12 +51,3 @@ export default function Home() {
     </>
  )
 }
-
-
-/*
-
-          <div className='flex justify-center mb-4'>
-            <img className='rounded-full h-60 w-60 ring-2 ring-black' src='https://i.imgur.com/RsxlijS.jpg'></img>
-          </div>
-
-*/

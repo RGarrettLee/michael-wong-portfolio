@@ -3,9 +3,6 @@ import React from 'react';
 import Head from 'next/head';
 import Footer from '../components/footer';
 
-// pass in user here to have it carry through all pages and use it finally for stuff?
-// pass into navbar as a prop
-
 function MyApp({ Component, pageProps }) {
 
   return (

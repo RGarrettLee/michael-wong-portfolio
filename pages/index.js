@@ -47,7 +47,7 @@ export default function Home() {
             <div className='flex justify-center mb-4'>
                <img className='rounded-full h-60 w-60 lg:h-32 lg:w-32 2xl:h-60 2xl:w-60 ring-2 ring-black' src='https://i.imgur.com/RsxlijS.jpg' alt='pfp'></img>
             </div>
-            <h1 className='font-bold text-5xl 2xl:text-6xl'>Michael Wong</h1>
+            <h1 className='font-inter text-5xl 2xl:text-6xl'>Michael Wong</h1>
             <h2 className='font-thin mt-2 text-lg 2xl:text-xl'>B.E.Sc. Computer Engineering, 2024</h2>
             <h3 className='font-thin text-md 2xl:text-lg'>Western University</h3>
          </div>
@@ -69,12 +69,12 @@ export default function Home() {
          </div>
          <div className='flex flex-col items-center mt-14'>
             <button onClick={() => projectRef.current.scrollIntoView()} className={`animate-bounce ${cursor} ${visibility} ease-linear transition-opacity duration-200 relative sm:top-1/4`}><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-arrow-down-circle" viewBox="0 0 16 16">
-                     <path filleRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                     <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
             </svg></button>
          </div>
        </div>
        <div className='flex flex-col justify-center items-center align-center pt-8' ref={projectRef}>
-         <h2 className='text-5xl font-semibold'>Porfolio</h2>
+         <h2 className='text-5xl font-inter'>Porfolio</h2>
          <div className='flex flex-col justify-center items-center gap-4 mt-12 mb-96'>
                 {projects.map((project, index) => (
                     <ProjectCard project={project} key={index} />

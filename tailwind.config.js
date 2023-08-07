@@ -6,6 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['"Inter"', 'sans-serif']
+      },
+      fontSize: {
+        vh: ['12vh', '14vh']
+      },
       'animation': {
         'gradient': 'gradient 2s ease-in-out infinite',
         'fade-in': 'fade-in 1.5s ease-in'

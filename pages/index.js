@@ -36,7 +36,7 @@ export default function Home() {
   }, []);
 
  return (
-    <div className='no-scrollbar overflow-y-scroll'>
+    <div>
        <Particles 
           init={particlesInit}
           loaded={particlesLoaded}

@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         <title>Michael Wong</title>
         <meta name='description' content='A portfolio page for Michael Wong'></meta>
         <meta name='author' content='Michael Wong'></meta>
-        <meta name='viewport' content='width=device-width, intial=scale=1.0'></meta>
+        <meta name='viewport' content='width=device-width, intial-scale=1.0'></meta>
       </Head>
       <Component {...pageProps} />
       <Footer />

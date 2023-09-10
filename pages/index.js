@@ -2,7 +2,6 @@ import Particles from 'react-particles';
 import { useCallback, useState, useEffect, useRef } from 'react';
 import ParticleOptions from '../utils/particles';
 import { loadFull } from 'tsparticles';
-import Link from 'next/link';
 import ExportProjects from '../utils/exportProjects';
 import ProjectCard from '../components/projectCard';
 
@@ -11,6 +10,7 @@ export default function Home() {
    const [cursor, setCursor] = useState('hover:cursor-select');
    const [projects, setProjects] = useState([]);
    const projectRef = useRef(null);
+   const portfolioLink = 'https://docs.google.com/gview?url=https://github.com/wongm3079/wongm3079.github.io/raw/main/Michael_Elliot_Wong_Resume_2023.pdf';
 
    useEffect(() => {
       window.onscroll = () => {
@@ -52,7 +52,7 @@ export default function Home() {
             <h3 className='font-thin text-md 2xl:text-lg'>Western University</h3>
          </div>
          <div className='flex flex-row gap-4 justify-center mt-8'>
-            <a target='_blank' rel='noreferrer' href='https://docs.google.com/gview?url=https://github.com/wongm3079/wongm3079.github.io/raw/main/MW_Resume.pdf'><button className='px-4 py-3 lg:py-2 2xl:py-3 bg-white text-black rounded-lg hover:bg-gray-200 shadow-md shadow-black ease-in duration-150 transition-all'>Resume</button></a>
+            <a target='_blank' rel='noreferrer' href={portfolioLink}><button className='px-4 py-3 lg:py-2 2xl:py-3 bg-white text-black rounded-lg hover:bg-gray-200 shadow-md shadow-black ease-in duration-150 transition-all'>Resume</button></a>
          </div>
          <div className='flex flex-row justify-center mt-10 gap-4'>
             <a className='hover:animate-pulse' target='_blank' rel='noreferrer' href='https://github.com/wongm3079'><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">

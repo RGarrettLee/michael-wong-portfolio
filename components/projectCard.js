@@ -18,7 +18,7 @@ export default function ProjectCard({ project }) {
         <button
           type="button"
           onClick={openModal}
-          className="bg-white text-black rounded-md px-4 py-2 shadow-md shadow-black hover:opacity-75 ease-in duration-100 transition-all"
+          className="bg-white ring-1 ring-white text-black rounded-md px-4 py-2 shadow-md shadow-black hover:bg-black hover:text-white ease-in duration-500 transition-all"
         >
           {project.name}
         </button>

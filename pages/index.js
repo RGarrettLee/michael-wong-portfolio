@@ -10,6 +10,7 @@ export default function Home() {
    const [cursor, setCursor] = useState('hover:cursor-select');
    const [projects, setProjects] = useState([]);
    const projectRef = useRef(null);
+   const profileImage = 'https://i.imgur.com/0FilLOE.jpeg';
    const portfolioLink = 'https://docs.google.com/gview?url=https://github.com/wongm3079/wongm3079.github.io/raw/main/Michael_Elliot_Wong_Resume_2023.pdf';
 
    useEffect(() => {
@@ -45,7 +46,7 @@ export default function Home() {
        <div className='flex flex-col justify-center text-center mt-auto h-screen static inset-x-0'>
          <div className="flex flex-col justify-center text-center">
             <div className='flex justify-center mb-4'>
-               <img className='rounded-full h-60 w-60 lg:h-32 lg:w-32 2xl:h-60 2xl:w-60 ring-2 ring-black' src='https://i.imgur.com/RsxlijS.jpg' alt='pfp'></img>
+               <img className='rounded-full h-60 w-60 lg:h-32 lg:w-32 2xl:h-60 2xl:w-60 ring-2 ring-black' src={profileImage} alt='pfp'></img>
             </div>
             <h1 className='font-inter text-5xl 2xl:text-6xl'>Michael Wong</h1>
             <h2 className='font-thin mt-2 text-lg 2xl:text-xl'>B.E.Sc. Computer Engineering, 2024</h2>

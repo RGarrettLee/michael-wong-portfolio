@@ -10,7 +10,7 @@ export default function Home() {
    const [cursor, setCursor] = useState('hover:cursor-select');
    const [projects, setProjects] = useState([]);
    const projectRef = useRef(null);
-   const profileImage = 'https://i.imgur.com/0FilLOE.jpeg';
+   const profileImage = 'https://i.imgur.com/17rQx5Q.jpg';
    const portfolioLink = 'https://docs.google.com/gview?url=https://github.com/wongm3079/wongm3079.github.io/raw/main/Michael_Elliot_Wong_Resume_2023.pdf';
 
    useEffect(() => {
